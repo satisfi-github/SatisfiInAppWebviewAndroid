@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".MainScreenActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:background="@drawable/satisfi_logo"
+            android:contentDescription="@string/satisfi_labs" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/give_input_url"
+                android:textColor="#606060"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/baseURL"
+                android:imeOptions="flagNoExtractUi"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/text"
+                android:background="@drawable/edit_text_border"
+                android:textColor="#606060"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:autofillHints="no"
+                android:inputType="textUri"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/url_parameters"
+                android:textColor="#606060"
+                android:layout_below="@id/baseURL"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/urlParam"
+                android:imeOptions="flagNoExtractUi"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/text1"
+                android:background="@drawable/edit_text_border"
+                android:textColor="#606060"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:autofillHints="no"
+                android:inputType="textUri"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/baseURLParam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/urlParam"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:layout_marginStart="10dp"
+                android:textColor="#606060"/>
+
+            <LinearLayout
+                android:id="@+id/bars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/baseURLParam"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/topBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/topBar"
+                        android:textAlignment="textStart"
+                        android:textColor="#606060"
+                        android:layout_marginTop="20dp"
+                        android:thumb="@drawable/switch_thumb"
+                        app:switchMinWidth="50dp"
+                        app:switchPadding="100dp"
+                        app:track="@drawable/switch_track" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/bottomBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:checked="true"
+                        android:text="@string/bottomBar"
+                        android:textAlignment="textStart"
+                        android:textColor="#606060"
+                        android:thumb="@drawable/switch_thumb"
+                        app:switchPadding="100dp"
+                        app:track="@drawable/switch_track" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/open_in_webview"
+                android:textColor="#606060"
+                android:textAllCaps="false"
+                android:background="@drawable/button_border"
+                android:layout_below="@id/bars"/>
+
+            <Button
+                android:id="@+id/webChrome"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/open_in_webchrome"
+                android:textColor="#606060"
+                android:textAllCaps="false"
+                android:background="@drawable/button_border"
+                android:layout_below="@id/webView"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#606060"
+                android:layout_below="@id/webChrome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/_2021_satisfi_labs_inc_all_rights_reserved"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

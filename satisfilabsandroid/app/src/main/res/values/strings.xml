@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Satisfi Webview Tester</string>
+    <string name="leftArrow">LeftArrow</string>
+    <string name="rightArrow">RightArrow</string>
+    <string name="permission_denied">Without Your Permission We Cannot Access it!!!</string>
+    <string name="downloadedStarted">Your File Is Ready To Download</string>
+    <string name="downloadedEnded">Your File Is Downloaded Successfully</string>
+    <string name="more_icons">More Icons</string>
+    <string name="home">Home</string>
+    <string name="refresh">Refresh</string>
+    <string name="share">Share</string>
+    <string name="sleepyMonkey">sleepyMonkey</string>
+    <string name="try_again">Try Again</string>
+    <string name="check_your_internet">Check Your Internet</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="oops">Oops!</string>
+    <string name="satisfi_lab">Satisfi Lab</string>
+    <string name="give_input_url">Base URL</string>
+    <string name="provide_url_here">Provide URL Here</string>
+    <string name="webChrome">WebChrome</string>
+    <string name="webView">WebView</string>
+    <string name="modal">Modal </string>
+    <string name="topBar">Show Header Bar </string>
+    <string name="bottomBar">Show Footer Bar </string>
+    <string name="submit">GO</string>
+    <string name="satisfi_labs">Satisfi Labs</string>
+    <string name="back_page">Back Page</string>
+    <string name="forward_page">Forward Page</string>
+    <string name="home_page">Home Page</string>
+    <string name="refresh_page">Refresh Page</string>
+    <string name="share_page">Share Page</string>
+    <string name="exit">exit</string>
+    <string name="drop_down_list">Drop Down List</string>
+
+    <string name="exitDialogTittle">Do you want to exit our app</string>
+    <string name="enterUrl">Enter Url to continue</string>
+    <string name="invalidURL">Invalid URL</string>
+    <string name="exitDialogPositiveButton">Yes</string>
+    <string name="exitDialogNegativeButton">No</string>
+    <string name="cameraOrGalleryIntentDisplayingTittle">Choose Image or Take Pic</string>
+    <string name="shareUrlIntentTittle">Sharing URL</string>
+    <string name="shareUrlIntentMessage">URL Copied</string>
+    <string name="popUpDialogDenied">This pop up window is not secure</string>
+    <string name="url_parameters">URL Parameters</string>
+    <string name="open_in_webview">Open in WebView</string>
+    <string name="open_in_webchrome">Open in Chrome</string>
+    <string name="_2021_satisfi_labs_inc_all_rights_reserved">© 2021 Satisfi Labs Inc. All rights reserved.</string>
+    <string name="xe902">&#129092;</string>
+
+</resources>
